@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		BB360C7E26AB3E45003B6CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360C7D26AB3E45003B6CAF /* AppDelegate.swift */; };
 		BB360C8026AB3E45003B6CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360C7F26AB3E45003B6CAF /* SceneDelegate.swift */; };
-		BB360C8226AB3E45003B6CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360C8126AB3E45003B6CAF /* ViewController.swift */; };
 		BB360C8526AB3E45003B6CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB360C8326AB3E45003B6CAF /* Main.storyboard */; };
 		BB360C8726AB3E46003B6CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB360C8626AB3E46003B6CAF /* Assets.xcassets */; };
 		BB360C8A26AB3E46003B6CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB360C8826AB3E46003B6CAF /* LaunchScreen.storyboard */; };
+		BB360C9326AB3E7A003B6CAF /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360C9226AB3E7A003B6CAF /* MasterTableViewController.swift */; };
+		BB360C9526AB3F13003B6CAF /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360C9426AB3F12003B6CAF /* DetailTableViewController.swift */; };
+		BB360C9726AB4353003B6CAF /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360C9626AB4353003B6CAF /* Album.swift */; };
+		BB360C9F26AB4C5C003B6CAF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB360C9E26AB4C5C003B6CAF /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB360C7A26AB3E45003B6CAF /* Mobelux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobelux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB360C7D26AB3E45003B6CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB360C7F26AB3E45003B6CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB360C8126AB3E45003B6CAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB360C8426AB3E45003B6CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB360C8626AB3E46003B6CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB360C8926AB3E46003B6CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB360C8B26AB3E46003B6CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB360C9126AB3E51003B6CAF /* Mobelux.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mobelux.entitlements; sourceTree = "<group>"; };
+		BB360C9226AB3E7A003B6CAF /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		BB360C9426AB3F12003B6CAF /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		BB360C9626AB4353003B6CAF /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		BB360C9E26AB4C5C003B6CAF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +63,43 @@
 		BB360C7C26AB3E45003B6CAF /* Mobelux */ = {
 			isa = PBXGroup;
 			children = (
-				BB360C7D26AB3E45003B6CAF /* AppDelegate.swift */,
-				BB360C7F26AB3E45003B6CAF /* SceneDelegate.swift */,
-				BB360C8126AB3E45003B6CAF /* ViewController.swift */,
-				BB360C8326AB3E45003B6CAF /* Main.storyboard */,
+				BB360C9126AB3E51003B6CAF /* Mobelux.entitlements */,
+				BB360C9C26AB4ADE003B6CAF /* User Interface */,
+				BB360C9B26AB4AD1003B6CAF /* Controller */,
+				BB360C9A26AB4A7D003B6CAF /* Model */,
 				BB360C8626AB3E46003B6CAF /* Assets.xcassets */,
-				BB360C8826AB3E46003B6CAF /* LaunchScreen.storyboard */,
 				BB360C8B26AB3E46003B6CAF /* Info.plist */,
 			);
 			path = Mobelux;
+			sourceTree = "<group>";
+		};
+		BB360C9A26AB4A7D003B6CAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB360C9E26AB4C5C003B6CAF /* APIManager.swift */,
+				BB360C7D26AB3E45003B6CAF /* AppDelegate.swift */,
+				BB360C9626AB4353003B6CAF /* Album.swift */,
+				BB360C7F26AB3E45003B6CAF /* SceneDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB360C9B26AB4AD1003B6CAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB360C9226AB3E7A003B6CAF /* MasterTableViewController.swift */,
+				BB360C9426AB3F12003B6CAF /* DetailTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB360C9C26AB4ADE003B6CAF /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				BB360C8326AB3E45003B6CAF /* Main.storyboard */,
+				BB360C8826AB3E46003B6CAF /* LaunchScreen.storyboard */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB360C8226AB3E45003B6CAF /* ViewController.swift in Sources */,
+				BB360C9F26AB4C5C003B6CAF /* APIManager.swift in Sources */,
+				BB360C9526AB3F13003B6CAF /* DetailTableViewController.swift in Sources */,
 				BB360C7E26AB3E45003B6CAF /* AppDelegate.swift in Sources */,
+				BB360C9326AB3E7A003B6CAF /* MasterTableViewController.swift in Sources */,
 				BB360C8026AB3E45003B6CAF /* SceneDelegate.swift in Sources */,
+				BB360C9726AB4353003B6CAF /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,15 +324,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mobelux/Mobelux.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65DA2F438H;
 				INFOPLIST_FILE = Mobelux/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chaseangelogiles.Mobelux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +347,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mobelux/Mobelux.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65DA2F438H;
 				INFOPLIST_FILE = Mobelux/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chaseangelogiles.Mobelux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
